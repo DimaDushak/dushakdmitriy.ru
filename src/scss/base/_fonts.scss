@@ -1,0 +1,51 @@
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/assets/fonts/roboto-v20-latin_cyrillic-regular.eot');
+	src: local('Roboto'), local('Roboto-Regular'),
+		 url('/assets/fonts/roboto-v20-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'),
+		 url('/assets/fonts/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'),
+		 url('/assets/fonts/roboto-v20-latin_cyrillic-regular.woff') format('woff'),
+		 url('/assets/fonts/roboto-v20-latin_cyrillic-regular.ttf') format('truetype'),
+		 url('/assets/fonts/roboto-v20-latin_cyrillic-regular.svg#Roboto') format('svg');
+}
+
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	src: url('/assets/fonts/roboto-v20-latin_cyrillic-500.eot');
+	src: local('Roboto Medium'), local('Roboto-Medium'),
+		 url('/assets/fonts/roboto-v20-latin_cyrillic-500.eot?#iefix') format('embedded-opentype'),
+		 url('/assets/fonts/roboto-v20-latin_cyrillic-500.woff2') format('woff2'),
+		 url('/assets/fonts/roboto-v20-latin_cyrillic-500.woff') format('woff'),
+		 url('/assets/fonts/roboto-v20-latin_cyrillic-500.ttf') format('truetype'),
+		 url('/assets/fonts/roboto-v20-latin_cyrillic-500.svg#Roboto') format('svg');
+}
+
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	src: url('/assets/fonts/roboto-v20-latin_cyrillic-700.eot');
+	src: local('Roboto Bold'), local('Roboto-Bold'),
+		 url('/assets/fonts/roboto-v20-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'),
+		 url('/assets/fonts/roboto-v20-latin_cyrillic-700.woff2') format('woff2'),
+		 url('/assets/fonts/roboto-v20-latin_cyrillic-700.woff') format('woff'),
+		 url('/assets/fonts/roboto-v20-latin_cyrillic-700.ttf') format('truetype'),
+		 url('/assets/fonts/roboto-v20-latin_cyrillic-700.svg#Roboto') format('svg');
+}
+
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 900;
+	src: url('/assets/fonts/roboto-v20-latin_cyrillic-900.eot');
+	src: local('Roboto Black'), local('Roboto-Black'),
+		 url('/assets/fonts/roboto-v20-latin_cyrillic-900.eot?#iefix') format('embedded-opentype'),
+		 url('/assets/fonts/roboto-v20-latin_cyrillic-900.woff2') format('woff2'),
+		 url('/assets/fonts/roboto-v20-latin_cyrillic-900.woff') format('woff'),
+		 url('/assets/fonts/roboto-v20-latin_cyrillic-900.ttf') format('truetype'),
+		 url('/assets/fonts/roboto-v20-latin_cyrillic-900.svg#Roboto') format('svg');
+}

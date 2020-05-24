@@ -1,0 +1,158 @@
+.what-i-to-do-section	{
+	background-color: white;
+
+	&__flex {
+		@include fixed-container;
+		padding: 87px 40px 103px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+
+		@include phoneWidth {
+			padding: 42px 20px 50px;
+		}
+	}
+
+	&__heading {
+		font-size: 54px;
+		font-weight: 700;
+		color: $black-font-color;
+		margin-bottom: 88px;
+
+		@include phoneWidth {
+			font-size: 30px;
+			margin-bottom: 42px;
+		}
+	}
+
+	&__items {
+		display: flex;
+		justify-content: space-between;
+
+		@include tableWidth {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		& div:nth-child(n+1) {
+			@include tableWidth {
+				flex-basis: 34%;
+			}
+
+			@include mtableWidth {
+				flex-basis: 40%;	
+			}
+
+			@include phoneWidth {
+				margin-bottom: 47px;
+				flex-basis: 53%;
+			}
+
+			@include sPhoneWidth {
+				flex-basis: 78%;
+			}
+		}
+
+		& div:nth-child(odd) {
+			@include tableWidth {
+				margin-right: 65px;
+			}
+
+			@include phoneWidth {
+				margin-right: 0;
+			}
+		}
+
+		& div:nth-child(-n+2) {
+			@include tableWidth {
+				margin-bottom: 80px;
+			}
+		}
+
+		& div:nth-child(1) {
+			flex-basis: 22%;
+		}
+
+		& div:nth-child(2) {
+			flex-basis: 24%;
+
+			@include tableWidth {
+				margin-right: 0;
+			}
+		}
+
+		& div:nth-child(3) {
+			flex-basis: 18%;
+		}
+
+		& div:nth-child(4) {
+			flex-basis: 21.5%;
+			margin-right: 0;
+
+			@include phoneWidth {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&__item {
+		text-align: center;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-right: 5px;
+	}
+
+	&__img {
+		@include sPhoneWidth {
+			max-width: 28%;
+		}
+	}
+
+	&__description {
+		margin-top: 16px;
+		font-size: 20px;
+		line-height: 30px;
+
+		@include desktopWidth {
+			font-size: 18px;
+		}
+
+		@include sdesktopWidth {
+			font-size: 16px;
+		}
+
+		@include tableWidth {
+			font-size: 20px;
+		}
+
+		@include mtableWidth {
+			font-size: 18px;	
+		}
+
+		@include sTableWidth {
+			font-size: 16px;
+		}
+
+		@include phoneWidth {
+			line-height: 24px;
+			margin-top: 16.5px;
+		}
+	}
+
+	&__button {
+		margin-top: 93px;
+		@include btn-size;
+		@include btn-reset;
+		@include btn-color;
+
+		&:hover {
+			@include btn-transparent;
+		}
+
+		@include phoneWidth {
+			margin-top: 48px;
+		}
+	}
+}

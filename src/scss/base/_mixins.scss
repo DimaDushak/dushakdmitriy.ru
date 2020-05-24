@@ -1,0 +1,89 @@
+@mixin btn-reset {
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+}
+
+@mixin btn-size {
+    width: 270px;
+    height: 60px;
+    font-size: 18px;
+
+    @include sdesktopWidth {
+        width: 320px;
+	    height: 68px;
+    }
+
+    @include phoneWidth {
+        font-size: 16px;
+        width: 280px;
+        height: 55px;
+    }
+}
+
+@mixin btn-transparent {
+    color: $button-text-color;
+    background-color: transparent;
+	border: 1px solid $button-border-color;
+	transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+@mixin btn-color {
+    background-color: $button-back-color;
+	color: white;
+	border: 0;
+	transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+@mixin fixed-container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+@mixin desktopWidth {
+    @media (max-width: 1500px) {
+        @content;
+    }
+}
+
+@mixin sdesktopWidth {
+    @media (max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin tableWidth {
+    @media (max-width: 1041px) {
+        @content;
+    }
+}
+
+@mixin mtableWidth {
+    @media (max-width: 910px) {
+        @content;
+    }
+}
+
+@mixin sTableWidth {
+    @media (max-width: 675px) {
+        @content;
+    }
+}
+
+@mixin phoneWidth {
+    @media (max-width: 598px) {
+        @content;
+    }
+}
+
+@mixin sPhoneWidth {
+    @media (max-width: 450px) {
+        @content;
+    }
+}
+
+@mixin minWidth {
+    @media (max-width: 360px) {
+        @content;
+    }
+}

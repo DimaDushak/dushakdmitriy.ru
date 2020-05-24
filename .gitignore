@@ -1,0 +1,6 @@
+src/fonts/
+src/img
+src/static
+package-lock.json
+node_modules/
+dist/

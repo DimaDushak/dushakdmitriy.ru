@@ -1,0 +1,151 @@
+.description-block {
+	color: white;
+	background-image: linear-gradient(to top right, $gradient-orange, $gradient-pink);
+	position: relative;
+	overflow: hidden;
+
+	@include tableWidth {
+		background-image: linear-gradient(to top, $gradient-orange, $gradient-pink);
+	}
+
+	&__fixed {
+		@include fixed-container;
+		padding: 74px 40px 80px 155px;
+
+		@include tableWidth {
+			padding: 74px 40px 80px;
+		}
+
+		@include phoneWidth {
+			padding: 42px 20px;
+		}
+	}
+
+	&__item {
+		font-size: 45px;
+		font-weight: 700;
+		line-height: 60px;
+
+		@include phoneWidth {
+			font-size: 28px;
+			line-height: 40px;
+		}
+
+		&_size-s {
+			display: flex;
+			margin-top: 31px;
+			padding-right: 290px;
+			line-height: 30px;
+			font-size: 18px;
+			letter-spacing: 0.1px;
+
+			&::before {
+				content: "*";
+				margin: -1px 6px 0 0;
+
+				@include phoneWidth {
+					font-size: 20px;
+				}
+			}
+
+			@include tableWidth {
+				padding-right: 180px;
+			}
+
+			@include phoneWidth {
+				padding: 2px 0 0;
+				font-size: 15px;
+			}
+		}
+	}
+
+	& div:nth-child(n+2) {
+		position: absolute;
+		transition: 1s;
+		font-weight: 700;
+
+		@include phoneWidth {
+			display: none;
+		}
+	}
+
+	& div:nth-child(2) {
+		font-size: 43px;
+		top: 40px;
+		left: -50px;
+
+		@include desktopWidth {
+			top: 0;
+		}
+
+		@include tableWidth {
+			font-size: 29px;
+			top: 0;
+			left: -30px;
+		}
+	}
+	  
+	& div:nth-child(3) {
+		font-size: 55px;
+		top: 200px;
+		left: -50px;
+
+		@include desktopWidth {
+			top: 220px;
+			left: -180px;
+		}
+
+		@include tableWidth {
+			display: none;
+		}
+	}
+	  
+	& div:nth-child(4) {
+		font-size: 35px;
+		top: 510px;
+		right: -80px;
+
+		@include desktopWidth {
+			right: -240px;
+		}
+
+		@include tableWidth {
+			top: 520px;
+			font-size: 23px;
+		}
+
+		@include mtableWidth {
+			top: 590px;
+			right: -350px;
+		}
+	}
+	  
+	& div:nth-child(5) {
+		font-size: 48px;
+		top: 250px;
+		right: -80px;
+
+		@include tableWidth {
+			display: none;
+		}
+	}
+	  
+	& div:nth-child(6) {
+		font-size: 38px;
+		top: 20px;
+		right: -80px;
+
+		@include desktopWidth {
+			top: -20px;
+		}
+
+		@include tableWidth {
+			top: 230px;
+			right: -183px;
+		}
+
+		@include mtableWidth {
+			top: 250px;
+		}
+	}
+}

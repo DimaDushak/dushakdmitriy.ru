@@ -1,0 +1,249 @@
+.top-background-section {
+	background-image: url('/assets/img/ellipse(1920).svg');
+	background-repeat: no-repeat;
+	background-position: 81% bottom;
+	position: relative;
+	overflow: hidden;
+
+	@include sdesktopWidth {
+		background-size: 1920px 74%;
+		background-position: 71% bottom;
+	}
+
+	@include mtableWidth {
+		background-size: 1920px 58%;
+		background-position: 75% 46%;
+	}
+
+	@include phoneWidth {
+		background-size: 1000px 80%;
+		background-position: 98% bottom;
+	}
+
+	&__flex {
+		@include fixed-container;
+		display: flex;
+		justify-content: space-between;
+
+		@include mtableWidth {
+			flex-wrap: wrap;
+			justify-content: flex-end;
+		}
+	}
+
+	&__text-block {
+		padding: 286px 0 0 40px;
+		position: relative;
+		z-index: 5;
+
+		@include sdesktopWidth {
+			padding-top: 312px;
+		}
+
+		@include mtableWidth {
+			order: 1;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			padding: 18px 40px 0;
+			background-color: white;
+			text-align: center;
+		}
+
+		@include phoneWidth {
+			padding: 12px 20px 0;
+		}
+	}
+
+	&__heading {
+		font-size: 80px;
+		font-weight: 900;
+		color: $black-font-color;
+
+		@include sdesktopWidth {
+			font-size: 54px;
+		}
+
+		@include mtableWidth {
+			flex-basis: 100%;
+		}
+
+		@include phoneWidth {
+			font-size: 30px;
+		}
+	}
+
+	&__description {
+		font-size: 25px;
+		margin-top: 14px;
+
+		@include sdesktopWidth {
+			font-size: 21px;
+			margin-top: 23px;
+		}
+
+		@include mtableWidth {
+			flex-basis: 100%;
+		}
+
+		@include phoneWidth {
+			font-size: 16px;
+			flex-basis: 70%;
+			margin-top: 7px;
+			line-height: 24px;
+		}
+	}
+
+	&__button {
+		margin-top: 45px;
+		@include btn-size;
+		@include btn-reset;
+		@include btn-color;
+
+		&:hover {
+			@include btn-transparent;
+		}
+
+		@include sdesktopWidth {
+			margin-top: 47px;
+		}
+
+		@include phoneWidth {
+			margin-top: 23px;
+		}
+	}
+
+	&__img {
+		padding: 141px 40px 0 0;
+
+		@include phoneWidth {
+			width: 240px;
+			height: 468px;
+			padding: 87px 20px 0 0;
+		}
+	}
+
+	& :nth-of-type(n+2) {
+		color: transparent;
+		background-clip: text;
+		font-weight: 700;
+		background-image: linear-gradient(to top right, $gradient-orange, $gradient-pink);
+		position: absolute;
+	}
+
+	& :nth-of-type(2) {
+		top: 50px;
+		left: -50px;
+		transition: 1s;
+		font-size: 43px;
+
+		@include sdesktopWidth {
+			top: 75px;
+			left: -92px;
+		}
+
+		@include phoneWidth {
+			top: 15px;
+			left: -125px;
+			font-size: 22px;
+		}
+	}
+
+	& :nth-of-type(3) {
+		top: 20px;
+		right: -80px;
+		transition-timing-function: ease-out;
+		transition-duration: 1s;
+		font-size: 29px;
+
+		@include desktopWidth {
+			right: -300px;
+		}
+
+		@include sdesktopWidth {
+			top: 5px;
+			right: -1070px;
+		}
+
+		@include phoneWidth {
+			display: none;
+		}
+	}
+
+	& :nth-of-type(4) {
+		top: 375px;
+		left: -50px;
+		transition: 1s;
+		font-size: 55px;
+
+		@include sdesktopWidth {
+			top: 590px;
+			left: -230px;
+		}
+
+		@include phoneWidth {
+			top: 160px;
+			left: -250px;
+			font-size: 28px;
+		}
+	}
+
+	& :nth-of-type(5) {
+		top: 570px;
+		right: -80px;
+		transition-timing-function: ease-in;
+		transition-duration: 1s;
+		font-size: 35px;
+
+		@include sdesktopWidth {
+			display: none;
+		}
+
+		@include phoneWidth {
+			font-size: 14px;
+			top: 175px;
+			right: -915px;
+			display: block;
+		}
+	}
+
+	& :nth-of-type(6) {
+		top: 700px;
+		left: -50px;
+		transition-timing-function: linear;
+		transition-duration: 1s;
+		font-size: 38px;
+
+		@include sdesktopWidth {
+			top: 615px;
+			left: -60px;
+		}
+
+		@include mtableWidth {
+			top: 315px;
+			left: -260px
+		}
+
+		@include phoneWidth {
+			top: 90px;
+			font-size: 16px;
+		}
+	}
+
+	& :nth-of-type(7) {
+		font-size: 45px;
+		transition-timing-function: linear;
+		transition-duration: 1s;
+		display: none;
+
+		@include sdesktopWidth {
+			display: block;
+			top: 190px;
+			left: -60px;
+		}
+
+		@include mtableWidth {
+			display: none;
+		}
+	}
+}

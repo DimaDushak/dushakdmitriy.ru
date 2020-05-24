@@ -1,0 +1,16 @@
+@import './base/fonts';
+@import './base/variables';
+@import './base/mixins';
+@import './base/base';
+
+@import './components/forms';
+@import './components/header';
+@import './components/top-background-section';
+@import './components/what-i-to-do-section';
+@import './components/examples-section';
+@import './components/description-block';
+@import './components/footer';
+
+$fa-font-path : "~@fortawesome/fontawesome-free/webfonts";
+@import "./node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "./node_modules/@fortawesome/fontawesome-free/scss/solid.scss";

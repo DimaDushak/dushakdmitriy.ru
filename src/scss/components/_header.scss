@@ -1,0 +1,151 @@
+.header {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    min-width: 320px;
+
+    &__flex {
+        @include fixed-container;
+        padding: 29px 40px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include phoneWidth {
+            padding: 25px 20px 0;
+        }
+    }
+
+    &-left {
+        @include phoneWidth {
+            width: 50px;
+        }
+
+        &__button {
+            display: none;
+            background-color: transparent;
+            @include btn-reset;
+
+            &_close-menu {
+                width: 45px;
+                margin-top: -23px;
+
+                @include phoneWidth {
+                    width: 24px;
+                    margin-top: -14px;
+                }
+            }
+
+            &_open-menu {
+                @include tableWidth {
+                    display: block;
+                }
+            }
+        }
+
+        &__img {
+            margin-top: 5px;
+
+            @include phoneWidth {
+                width: 24px;
+                height: 18px;
+            }
+        }
+
+        &__span {
+            background-image: linear-gradient(to top right, $gradient-orange, $gradient-pink);
+            background-clip: text;
+            color: transparent;
+            font-weight: 500;
+            font-size: 75px;
+
+            @include phoneWidth {
+                font-size: 45px;
+                font-weight: 400;
+            }
+        }
+
+        &__nav {
+            @include tableWidth {
+                display: none;
+                width: 85px;
+                padding-bottom: 15px;
+                background-color: $main-back-color;
+            }
+
+            @include phoneWidth {
+                width: 75px;
+                padding-bottom: 0;
+            }
+        }
+
+        &__item {
+            display: inline-block;
+            margin-right: 29px;
+            
+            @include tableWidth {
+                display: block;
+                margin: 0 0 15px;
+            }
+
+            @include phoneWidth {
+                margin-bottom: 10px;
+            }
+        }
+
+        &__link {
+            @include phoneWidth {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &-right {
+        display: flex;
+        align-items: center;
+
+        &__link {
+            font-size: 25px;
+            font-weight: 700;
+            margin-top: -3px;
+
+            @include mtableWidth {
+                font-size: 20px;
+            }
+
+            @include phoneWidth {
+                font-size: 18px;
+                margin-top: 0;
+            }
+        }
+
+        &__button {
+            @include btn-reset;
+            @include btn-transparent;
+            margin-left: 28px;
+            width: 207px;
+            height: 45px;
+
+            @include phoneWidth {
+                color: transparent;
+                background-image: url('/assets/img/call.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                border: 0;
+                width: 27px;
+                height: 27px;
+                margin-left: 33px;
+                overflow: hidden;
+            }
+
+            &:hover {
+                @include btn-color;
+
+                @include phoneWidth {
+                    background-color: transparent;
+                    color: transparent;
+                }
+            }
+        }
+    }
+}

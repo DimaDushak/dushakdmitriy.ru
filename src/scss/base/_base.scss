@@ -1,0 +1,70 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto';
+	box-sizing: border-box;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+html, body {
+	min-width: 320px;
+	background-color: $main-back-color;
+	color: $main-font-color;
+}
+
+a {
+	text-decoration: none;
+	color: $black-font-color;
+	transition: color 0.3s linear;
+}
+
+a:hover {
+	color: $link-hover-color;
+	transition: color 0.3s linear;
+}
+
+ul {
+	list-style-type: none;
+//для группировки media запросов в правильном порядке
+	@include desktopWidth {
+		list-style-type: none;
+	}
+	@include sdesktopWidth {
+		list-style-type: none;
+	}
+	@include tableWidth {
+		list-style-type: none;
+	}
+	@include mtableWidth {
+		list-style-type: none;
+	}
+	@include sTableWidth {
+		list-style-type: none;
+	}
+	@include phoneWidth {
+		list-style-type: none;
+	}
+	@include sPhoneWidth {
+		list-style-type: none;
+	}
+	@include minWidth {
+		list-style-type: none;
+	}
+}
+  
+input::placeholder {
+	color: rgba(0, 0, 0, 0.3);
+}
+  
+.hidden {
+	overflow: hidden;
+}
+
+.flex-start {
+	align-self: flex-start;
+}
+
+.error {
+	border: 1px solid red;
+}
